@@ -33,11 +33,12 @@ void setup() {
   zx = random(256);
 
   Serial.begin(115200);
-  gpio_viewer.connectToWifi("Abubaker-2.4G","Incorrect_9547");
+  gpio_viewer.connectToWifi("xxxxxxxx","xxxxxxxxx");
   tft.init();
   tft.setRotation(1);
   tft.fillScreen(TFT_BLACK);
   gpio_viewer.begin();
+
   // fastSetup() must be used immediately before fastPixel() to prepare screen
   // It must be called after any other graphics drawing function call if fastPixel()
   // is to be called again
